@@ -1,0 +1,51 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Validator tutorial postman",
+		"_postman_id": "7e3cf935-b5ff-8415-46e9-627c43dc330a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Lession1 - send customer - age 17",
+			"request": {
+				"url": "http://localhost:8080/customer",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\":\"charles\", \"age\":17 }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Lession1 - send customer - age 20",
+			"request": {
+				"url": "http://localhost:8080/customer",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\":\"charles\", \"age\":20 }"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
