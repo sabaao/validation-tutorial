@@ -1,3 +1,19 @@
+# 課程介紹
+## Lession 1
+介紹spring boot中，如何使用原生的@Valid
+## Lession 2
+介紹spring boot中，如何使用spring的@Validated
+## Lession 3
+介紹@Validated的group如何使用
+## Lession 4
+介紹在spring boot中，如何catch @Validated丟出來的錯
+## Lession 5
+介紹如何手動檢查物件是否符合@Validated
+## Lession 6
+介紹Constraint中的message也可以使用el語法
+## Lession 7
+介紹自己做的Validator-common，並教學如何使用
+
 # 遇到的問題
 程式碼中充滿多許判斷傳入的屬性是否符合一些很基本的判斷
 例如：
@@ -46,7 +62,21 @@ Constraint|详细信息
 @Positive 和 @PositiveOrZero | 验证注解的属性值大于等于零，应用在数值验证 
 @Negative 和 @NegativeOrZero | 验证注解的属性值小于等于零，应用在数值验证
 
-
+# 課程介紹
+## Lession 1
+介紹spring boot中，如何使用原生的@Valid
+## Lession 2
+介紹spring boot中，如何使用spring的@Validated
+## Lession 3
+介紹@Validated的group如何使用
+## Lession 4
+介紹在spring boot中，如何catch @Validated丟出來的錯
+## Lession 5
+介紹如何手動檢查物件是否符合@Validated
+## Lession 6
+介紹Constraint中的message也可以使用el語法
+## Lession 7
+介紹自己做的Validator-common，並教學如何使用
 
 
 
