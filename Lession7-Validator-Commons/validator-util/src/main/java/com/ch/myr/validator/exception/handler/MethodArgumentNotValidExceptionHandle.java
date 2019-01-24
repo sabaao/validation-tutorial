@@ -1,4 +1,4 @@
-package charles.lab.exception.handle;
+package com.ch.myr.validator.exception.handler;
 
 import java.util.List;
 
@@ -10,8 +10,6 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import charles.lab.util.ValidatorUtils;
-
 @ControllerAdvice
 public class MethodArgumentNotValidExceptionHandle {
 
@@ -20,8 +18,8 @@ public class MethodArgumentNotValidExceptionHandle {
     BindingResult result = ex.getBindingResult();
     List<FieldError> fieldErrors = result.getFieldErrors();
     FieldError f = fieldErrors.stream().findFirst().get();
-    String errorCode = ValidatorUtils.getErrorCode("", f.getField(),f.getCode());
+    String str = f.getField() + "," + f.getCode() + "," + f.getDefaultMessage();
     
-    return new ResponseEntity(errorCode,HttpStatus.BAD_GATEWAY);
+    return new ResponseEntity(str,HttpStatus.BAD_GATEWAY);
   }
 }

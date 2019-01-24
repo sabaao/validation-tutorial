@@ -10,6 +10,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
+import charles.lab.util.ValidatorUtils;
+
 @ControllerAdvice
 public class ConstrainViolationExceptionHandle {
 
@@ -19,8 +21,8 @@ public class ConstrainViolationExceptionHandle {
     ConstraintViolation c = list.stream().findFirst().get();
     String message = c.getMessage();
     String property =c.getPropertyPath().toString();
-    String name = c.getConstraintDescriptor().getAnnotation().annotationType().getName();
-    String result = message + " " + property + " " + name;
+    String name = ValidatorUtils.getClassName(c.getConstraintDescriptor().getAnnotation().annotationType().getName());
+    String result = ValidatorUtils.getErrorCode("", property, name);
     
     return new ResponseEntity<String>(result, HttpStatus.OK);
   }
