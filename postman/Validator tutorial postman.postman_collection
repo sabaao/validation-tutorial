@@ -46,6 +46,106 @@
 				"description": ""
 			},
 			"response": []
+		},
+		{
+			"name": "Lession2 - send Foo - name blank",
+			"request": {
+				"url": "http://localhost:8080/foo/getFoo",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"name\":\"\",\n\t\"age\":20,\n\t\"phone\":\"123456789\",\n\t\"email\":\"sabaao35@gmail.com\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Lession3 - insert employee fail",
+			"request": {
+				"url": "http://localhost:8080/employee/insertemployee",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"name\":null,\n\t\"age\":17,\n\t\"address\":null\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Lession3 - update employee fail",
+			"request": {
+				"url": "http://localhost:8080/employee/updateemployee",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"name\":null,\n\t\"age\":17,\n\t\"address\":null\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Lession4 - handle exception",
+			"request": {
+				"url": "http://localhost:8080/employee/updateemployee",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"name\":null,\n\t\"age\":17,\n\t\"address\":null\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Lession6 - insert man fail",
+			"request": {
+				"url": "http://localhost:8080/man/insertman",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"name\":\"adf\",\n\t\"age\":1\n}"
+				},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }
