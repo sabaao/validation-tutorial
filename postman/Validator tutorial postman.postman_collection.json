@@ -2,7 +2,7 @@
 	"variables": [],
 	"info": {
 		"name": "Validator tutorial postman",
-		"_postman_id": "7e3cf935-b5ff-8415-46e9-627c43dc330a",
+		"_postman_id": "087521d5-2d0a-10f9-1f38-8fc1f76d35b8",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
@@ -142,6 +142,86 @@
 				"body": {
 					"mode": "raw",
 					"raw": "{ \n\t\"name\":\"adf\",\n\t\"age\":1\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Lession7 - send customer - age 17 - get standard error code",
+			"request": {
+				"url": "http://localhost:8080/customer",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\":\"charles\", \"age\":17 }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Lession7 - insert employee fail - get standard error ode",
+			"request": {
+				"url": "http://localhost:8080/employee/insertemployee",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"name\":null,\n\t\"age\":17,\n\t\"address\":null\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Lession7 - get book success",
+			"request": {
+				"url": "http://localhost:8080/book/getBookSuccess",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Lession7 - get book fail",
+			"request": {
+				"url": "http://localhost:8080/book/getBookFail",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
 				},
 				"description": ""
 			},
