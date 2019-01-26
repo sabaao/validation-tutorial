@@ -46,7 +46,10 @@ public class ValidatedAspect {
 	public Object around(ProceedingJoinPoint pjp) throws Throwable,ValidatorBaseException {
 		//get annoation
 		MethodSignature signature = (MethodSignature) pjp.getSignature();
-	    Method method = signature.getMethod();
+        Method method = pjp.getTarget()
+           .getClass()
+           .getMethod(signature.getMethod().getName(),     
+                      signature.getMethod().getParameterTypes());
 	    MyrValidated annotation = method.getAnnotation(MyrValidated.class);
 	    
 	    //valid all args

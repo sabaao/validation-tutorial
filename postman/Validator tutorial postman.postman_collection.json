@@ -226,6 +226,126 @@
 				"description": ""
 			},
 			"response": []
+		},
+		{
+			"name": "Lession7 - employee - myrvalidated validInsert fail",
+			"request": {
+				"url": "http://localhost:8080/employee/myrvalidated/validInsert/fail",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Lession7 - employee - myrvalidated validInsert success",
+			"request": {
+				"url": "http://localhost:8080/employee/myrvalidated/validInsert/success",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Lession7 - employee - myrvalidated validTwoInsert fail",
+			"request": {
+				"url": "http://localhost:8080/employee/myrvalidated/validTwoInsert/fail",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Lession7 - employee - myrvalidated validTwoInsert success",
+			"request": {
+				"url": "http://localhost:8080/employee/myrvalidated/validTwoInsert/success",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Lession7 - employee - myrvalidated validTwoGroup fail",
+			"request": {
+				"url": "http://localhost:8080/employee/myrvalidated/validTwoGroup/fail",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Lession7 - employee - myrvalidated validTwoGroup success",
+			"request": {
+				"url": "http://localhost:8080/employee/myrvalidated/validTwoGroup/success",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }
