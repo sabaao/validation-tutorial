@@ -1,0 +1,4 @@
+spring:
+  application:
+    name: lession-7
+    short-name: SSN
